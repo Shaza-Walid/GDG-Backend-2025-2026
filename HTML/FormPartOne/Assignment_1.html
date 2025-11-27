@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+</head>
+<body>
+
+<form action="test.py" method="POST">
+
+  <!-- Username -->
+  <label for="username">Username</label>
+  <br>
+  <input 
+    type="text" 
+    id="username" 
+    name="username" 
+    placeholder="write your username (required)" required>
+  <hr>
+
+  <!-- Password -->
+  <label for="password">Password</label>
+  <br>
+  <input 
+    type="password" 
+    id="password" 
+    name="password" 
+    placeholder="write a strong password">
+  <hr>
+
+  <!-- Mobile -->
+  <label for="mobile">Mobile</label>
+  <br>
+  <input 
+    type="tel" 
+    id="mobile" 
+    name="mobile"
+    placeholder="write your mobile number">
+  <hr>
+
+  <!-- Email -->
+  <label for="email">Email</label>
+  <br>
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="write your email address (required)" required>
+  <hr>
+
+  <!-- Subject -->
+  <label for="subject">Subject</label>
+  <br>
+  <input 
+    type="text" 
+    id="subject" 
+    name="subject" 
+    placeholder="write the subject title">
+  <hr>
+
+  <!-- Hidden Field -->
+  <input type="hidden" name="userID" value="28">
+
+  <!-- Buttons -->
+  <button type="reset">Empty Form</button>
+  <button type="submit">Send Data</button>
+
+</form>
+
+</body>
+</html>
