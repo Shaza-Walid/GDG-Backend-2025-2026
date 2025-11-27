@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, aside, article, footer {
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    header h1 { margin-top: 0; }
+
+    /* planning the layout and the content of the page */
+    .layout {
+      display: flex;
+    }
+    main {
+      width: 70%;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+    aside {
+      width: 30%;
+      padding: 20px;
+    }
+    article img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <h1>Anime House</h1>
+    <nav>
+      <a href="#Attack on Titan">Attack on Titan</a> |
+      <a href="#Demon Slayer">Demon Slayer</a> |
+      <a href="#Spy X Family">Spy x Family</a> |
+      <a href="#One Piece">One Piece</a> |
+      <a href="#Naruto">Naruto</a>
+    </nav>
+  </header>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav>
+    <a href="#Home">Home</a> |
+    <a href="#Blog">Blog</a> |
+    <a href="#Services">Services</a> |
+    <a href="#Contact">Contact</a> |
+    <a href="#About">About</a> |
+    <a href="#Help">Help</a>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT + SIDEBAR ==================== -->
+  <div class="layout">
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+      <!-- ARTICLE 1 -->
+      <article>
+        <h2>Attack on Titan</h2>
+        <p>This is an article about Attack on Titan.</p>
+        <img src="E:\pictures\anime-moon-landscape.jpg" alt="Article Image">
+        <a href="#">Read More</a>
+      </article>
+
+      <hr>
+
+      <!-- ARTICLE 2 -->
+      <article>
+        <h2>Demon Slayer</h2>
+        <p>This is an article about Demon Slayer.</p>
+        <img src="E:\pictures\anime-moon-landscape.jpg" alt="Article Image">
+        <a href="#">Read More</a>
+      </article>
+
+      <hr>
+
+      <!-- ARTICLE 3 -->
+      <article>
+        <h2>Spy x Family</h2>
+        <p>This is an article about Spy x Family.</p>
+        <img src="E:\pictures\anime-moon-landscape.jpg" alt="Article Image">
+        <a href="#">Read More</a>
+      </article>
+
+      <hr>
+
+        <!-- ARTICLE 4 -->
+        <article>
+        <h2>One Piece</h2>
+        <p>This is an article about One Piece.</p>
+        <img src="E:\pictures\anime-moon-landscape.jpg" alt="Article Image">
+        <a href="#">Read More</a>
+        </article>
+
+        <hr>
+
+        <!-- ARTICLE 5 -->
+        <article>
+        <h2>Naruto</h2>
+        <p>This is an article about Naruto.</p>
+        <img src="E:\pictures\anime-moon-landscape.jpg">
+        <a href="#">Read More</a>
+        </article>
+
+    </main>
+
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside>
+      <h3>Categories</h3>
+      <ul>
+        <li>Section 1</li>
+        <li>Section 2</li>
+        <li>Section 3</li>
+        <li>Section 4</li>
+        <li>Section 5</li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    Copyright &copy; 2021
+  </footer>
+
+</body>
+</html>
