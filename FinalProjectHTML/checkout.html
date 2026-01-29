@@ -10,57 +10,48 @@
 
 <body>
     <header>
-        <h1>Checkout</h1>
+        <h1>Anime Manga Store</h1>
+        <p>Explore our collection of the latest anime and manga.</p>
         <nav>
             <a href="index.html">Home</a> |
             <a href="products.html">Products</a> |
-            <a href="cart.html">Cart</a>
+            <a href="cart.html">Cart</a> |
+            <a href="checkout.html">Checkout</a>
         </nav>
     </header>
-    <hr>
     <main>
         <h2>Shipping & Payment</h2>
-        <form action="#" method="post">
-            <fieldset>
+        <form id="form" action="#" method="post">
+            <fieldset class="form-info">
                 <legend>Contact Information</legend>
                 <label for="fullname">Full name</label><br>
                 <input type="text" id="fullname" name="fullname" required><br>
-
-
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email" required><br>
-
-
                 <label for="address">Address</label><br>
                 <textarea id="address" name="address" rows="3" required></textarea><br>
-
-
                 <label for="phone">Phone number</label><br>
                 <input type="tel" id="phone" name="phone" required><br>
             </fieldset>
-
-
-            <fieldset>
+            <fieldset class="form-info">
                 <legend>Payment Method</legend>
                 <input type="radio" id="credit" name="payment" value="credit" required>
                 <label for="credit">Credit / Debit Card</label><br>
-
-
                 <input type="radio" id="paypal" name="payment" value="paypal">
                 <label for="paypal">PayPal</label><br>
-
-
                 <input type="radio" id="cod" name="payment" value="cod">
                 <label for="cod">Cash on Delivery</label>
             </fieldset>
-
-
-            <button type="submit">Submit Order</button>
         </form>
+        <button type="submit">Submit Order</button>
     </main>
-    <hr>
     <footer>
         <p>&copy; 2025 Anime Manga Store</p>
+        <address>
+            Contact: <a href="mailto:info@otakumanga.example">info@otakumanga.example</a>
+        </address>
+        <p>Follow us: <a href="https://twitter.com/otakumanga" target="_blank">Twitter</a> | <a
+                href="https://instagram.com/otakumanga" target="_blank">Instagram</a></p>
     </footer>
 </body>
 
