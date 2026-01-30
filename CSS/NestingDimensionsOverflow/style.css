@@ -1,0 +1,31 @@
+/* Assingment 1 */
+.parent .child .title {
+  color: red;
+}
+.parent > .title {
+  color: blue;
+}
+.parent p,
+.title:not(.parent .title) {
+  color: green;
+}
+
+/* Assingment 2 */
+.box-one, .box-two, .box-three{
+  background-color: #a52a2a;
+  color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  width: fit-content
+}
+.box-four{
+  background-color: #a52a2a;
+  color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  max-width: 400px;
+  overflow: hidden;
+  max-height: 90px;
+}
+
+

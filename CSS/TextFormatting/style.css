@@ -1,0 +1,74 @@
+/* Assignment 1 */
+.title {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+    text-shadow:
+        3px 3px 0 #f44336,
+        /* red */
+        6px 6px 0 #2196f3,
+        /* blue */
+        9px 9px 0 #9c27b0;
+    /* purple */
+}
+
+/* Assignment 2 */
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+
+/* Assignment 3 */
+#shape1 {
+    width: 400px;
+    padding: 16px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+#shape2 {
+    width: 400px;
+    padding: 16px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: fade;
+}
+
+#shape3 {
+    width: 400px;
+    padding: 16px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Assignment 4 */
+a {
+    justify-content: center;
+    /* توسيط أفقي */
+    align-items: center;
+    /* توسيط عمودي */
+    text-decoration: none;
+    background-color: rgb(13, 115, 81);
+    color: white;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-bottom: 5px solid rgb(8, 73, 52);
+}
