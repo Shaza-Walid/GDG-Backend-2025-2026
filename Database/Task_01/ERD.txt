@@ -1,0 +1,53 @@
+/Work_TODO
+
+“You are the Lead Backend Engineer for 'GDG'. The product manager has given you the business rules for the
+new university system. Your job is to translate these words into a technical ER Diagram and then map that diagram into
+a Relational Schema (Tables) that the development team can use.”
+
+Analyse these rules to identify Entities, Attributes (Composite/Multivalued), Relationships, and Weak Entities.
+
+
+$ Business Rules:
+
+> The Department & Faculty (1:1 & 1:N)
+
+    ○ The university has multiple Departments (Attributes: Name, Code, Building Location).
+    ○ Each Department has many Instructors (Attributes: ID, Name, Salary, Hire Date).
+    ○ Constraint: An Instructor belongs to exactly one Department.
+    ○ Constraint: Each Department is managed by exactly one "Head of Department" (who is an Instructor).
+    An Instructor can only manage one department.
+
+
+> The Users & Contact Info (Attributes)
+
+    ○ For every Student and Instructor, we must store their Address.
+    ○ Constraint: The Address is complex; we need to access the City, Street, and Zip Code separately (Hint: Composite Attribute).
+    ○ Constraint: Both Students and Instructors can have  multiple Phone Numbers (Hint: Multivalued Attribute).
+
+
+> The Course Catalog (Recursive Relationship)
+
+    ○ Departments offer Courses (Attributes: Course Code, Title, Credits).
+    ○ Constraint: A Course can have other courses as Prerequisites. (e.g., "CS102" requires "CS101").
+    A course can have many prerequisites, and a course can be a prerequisite for many others.
+
+
+> Student Dependents (Weak Entity)
+
+    ○ The university offers health insurance to students' families. We need to track Dependents (Name, Birthdate, Relationship).
+    ○ Constraint: A Dependent cannot exist in the database without a related Student. If the Student leaves, the Dependent data is removed.
+
+
+> Enrollment (M:N Relationship with Attributes)
+
+    ○ Students enroll in Courses.
+    ○ When a student enrolls, we must record the Enrollment Date and the final Grade.
+
+/Required
+> An ER Diagram(Visual) Showing:
+
+○ All Entities (Strong & Weak).
+○ All Attributes (Simple, Composite, Multivalued, Key, Derived).
+○ All Relationships with correct Cardinality (1:1, 1:N, M:N) and Participation (Total/Partial).
+○ Use Lucidchart to make the ERD or any platform.
+
